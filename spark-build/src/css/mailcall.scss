@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+
+#main-title {
+    color: #fff;
+}
+
+#form-container {
+    max-width: 600px;
+}
+.input-group-text {
+    width: 80px;
+}
+
+.preview-label {
+    width: 80px;
+    margin-right: 8px;
+    margin-block: auto;
+}
+.preview-form-control {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+html {
+    font-size: 14px;
+}
+#output-area {
+    font-size: 12px;
+}

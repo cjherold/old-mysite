@@ -1,0 +1,140 @@
+# Setup info for Eslint & Prettier can be found in documentation
+# Some interesting info: https://airbnb.io/javascript/
+
+extends:
+    - airbnb-base
+    - prettier
+
+plugins:
+    - import
+    - prettier
+
+env:
+    es2021: true
+    browser: true
+    commonjs: true
+    node: true
+    jquery: true
+
+parserOptions:
+    ecmaVersion: 8
+    sourceType: module
+
+# individual eslint rules can be enables/disabled
+rules:
+    no-unused-vars:
+        - warn
+
+    class-methods-use-this: 0
+
+    import/newline-after-import: 0
+
+    prettier/prettier:
+        - warn
+
+    arrow-body-style:
+        - error
+        - as-needed
+
+    arrow-parens: 0
+
+    camelcase:
+        - warn
+        - properties: always
+          ignoreDestructuring: false
+          ignoreImports: false
+
+    comma-dangle:
+        - warn
+        - arrays: always-multiline
+          objects: always-multiline
+          imports: never
+          exports: never
+          functions: ignore
+
+    consistent-return: 0
+
+    func-names: 0
+
+    function-paren-newline: 0
+
+    global-require: 0
+
+    guard-for-in: 0
+
+    implicit-arrow-linebreak: 0
+
+    import/no-extraneous-dependencies: 0
+
+    indent:
+        - error
+        - 4
+        - SwitchCase: 1
+
+    linebreak-style: 0
+
+    max-len: 0
+
+    no-bitwise: 0
+
+    no-console: 0
+
+    no-continue: 0
+
+    no-extra-boolean-cast: 0
+
+    no-labels: 0
+
+    no-mixed-operators: 0
+
+    no-multiple-empty-lines:
+        - warn
+        - max: 2
+          maxEOF: 1
+
+    no-param-reassign: 0
+
+    no-plusplus: 0
+
+    no-prototype-builtins: 0
+
+    no-restricted-globals: 0
+
+    no-restricted-properties: 0
+
+    no-restricted-syntax: 0
+
+    no-shadow: 0
+
+    no-underscore-dangle: 0
+
+    no-undef: 0
+
+    no-use-before-define: 0
+
+    no-useless-escape: 0
+
+    object-shorthand: 0
+
+    padded-blocks:
+        - error
+        - switches: never
+
+    prefer-arrow-callback: 0
+
+    prefer-const:
+        - warn
+
+    prefer-destructuring: 0
+
+    prefer-object-spread: 0
+
+    prefer-template: 0
+
+    radix:
+        - error
+        - as-needed
+
+    strict:
+        - 0
+        - global

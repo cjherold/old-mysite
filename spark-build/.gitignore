@@ -1,0 +1,9 @@
+
+
+node_modules
+src/assets/img
+_notes
+.env
+.vscode
+.vscode-test
+.DS_Store

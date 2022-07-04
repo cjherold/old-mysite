@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="description" content="My take on a sudoku puzzle"/>
+    <meta name="keywords" content="sudoku puzzle free, sudoku app, chris herold, resume cjherold, christopher herold, web developer"/>
+    <meta name="author" content="Christopher Herold"/>
+    <link rel="icon" type="image/png" href="./assets/icons/chrisicon32.png">
+
+    <title>{{title}}</title>
+
+    <script type="module" src="./js/_styles/style-sudoku.js"></script>
+</head>
+<body>
+
+    {{> navbar}}
+
+    <div class="container">
+        <h1 id="main-title" class="text-center my-lg-3 my-2">Sudoku</h1>
+    </div>
+
+    <div id="puzzle-container" class="container"></div>
+
+    <div class="container d-flex my-4 justify-content-center">
+        <div class="col-lg-6 col-12">
+            <div class="d-flex col-12 justify-content-center">
+                <div class="d-flex">
+                    <label class="text-center" for="">Easy</label>
+                    <input class="my-1 mx-3" type="radio" name="difficulty" value="easy" checked="checked">
+                </div>
+                <div class="mx-3 d-flex">
+                    <label for="">Medium</label>
+                    <input class="my-1 mx-2" type="radio" name="difficulty" value="medium">
+                </div>
+                <div class="d-flex">
+                    <label for="">Hard</label>
+                    <input class="my-1 mx-2" type="radio" name="difficulty" value="hard">
+                </div>
+            </div>
+
+            <div class="col-12 mt-3 d-flex">
+                <button id="new-game" class="btn btn-light m-auto">New Game</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="picker-wheel" data-tileNumber="" class="d-none">
+        <button id="close-wheel-btn" type="button" class="close">&times;</button>
+        <button id="btn-one" type="button" class="btn num-btn" value="1">1</button>
+        <button id="btn-two" type="button" class="btn num-btn" value="2">2</button>
+        <button id="btn-three" type="button" class="btn num-btn" value="3">3</button>
+        <button id="btn-four" type="button" class="btn num-btn" value="4">4</button>
+        <button id="btn-five" type="button" class="btn num-btn" value="5">5</button>
+        <button id="btn-six" type="button" class="btn num-btn" value="6">6</button>
+        <button id="btn-seven" type="button" class="btn num-btn" value="7">7</button>
+        <button id="btn-eight" type="button" class="btn num-btn" value="8">8</button>
+        <button id="btn-nine" type="button" class="btn num-btn" value="9">9</button>
+    </div>
+
+
+    <script defer type="module" src="./js/sudoku/sudoku.js"></script>
+
+</body>
+</html>
